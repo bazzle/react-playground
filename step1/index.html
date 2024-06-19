@@ -1,0 +1,67 @@
+<html>
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel Script -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+        const app = document.getElementById("app")
+       
+        function Hero() {
+           return (
+                <div>
+                    <h1>This is the page heading</h1>
+                    <p>This is the subtitle</p>
+                </div>
+            )
+        }
+        function Content(){
+            return (
+                <>
+                    <p>
+                        This component is a <i>fragment</i>
+                    </p>
+                    <p>
+                        The serene landscape stretched out before her, a canvas painted in hues of green and gold. The sun hung low in the sky, casting long shadows that danced across the fields. Birds sang in the distance, their melodies a gentle reminder of the beauty and tranquility of nature. She took a deep breath, filling her lungs with the crisp, clean air, and felt a profound sense of peace wash over her. This was her sanctuary, a place where the worries of the world seemed to melt away.
+                    </p>
+                    
+                    <p>
+                        In the bustling heart of the city, the rhythm of life was markedly different. The streets were alive with the hum of activity, as people hurried to and fro, each immersed in their own personal universe. Skyscrapers reached for the heavens, their glass facades reflecting the vibrant energy of urban life. Despite the chaos, there was a certain charm to the city, a sense of endless possibilities and adventures waiting to be discovered around every corner.
+                    </p>
+                    
+                    <ul>
+                        <li>Invent new traffic lights</li>
+                        <li>Rehearse a movie scene</li>
+                        <li>Improve the spectrum technology</li>
+                    </ul>
+    
+                    <p>
+                        As night fell, the world transformed once more. The sky, now a deep indigo, was dotted with countless stars, each one a distant beacon of light. The cool breeze carried with it the sounds of the nocturnal world, a symphony of whispers and rustles that filled the air. Sitting by the fire, she watched the flames dance and flicker, lost in thought. The day's journey had been long and tiring, but as she gazed into the night, she felt a renewed sense of wonder and anticipation for the adventures that lay ahead.
+                    </p>
+                    
+                    <img
+                        src="https://i.imgur.com/yXOvdOSs.jpg"
+                        alt="Hedy Lamarr"
+                        className="profile-image"
+                    />
+                </>
+            )
+        }
+
+        function HomePage(){
+            return (
+                <>
+                    <Hero/>
+                    <Content/>
+                </>
+            )
+        }
+
+        const root = ReactDOM.createRoot(app);
+
+        root.render(<HomePage />);
+
+      </script>
+  </body>
+</html>
